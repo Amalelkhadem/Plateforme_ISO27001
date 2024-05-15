@@ -97,6 +97,7 @@ Route::delete('/archive/{id}', [ArchiveController::class, 'supprimer'])->name('a
 Route::get('/archived-projects', [ArchiveController::class, 'showArchivedProjects'])->name('archived-projects');
 
 // Route a auditeur
+Route::get('/services', [ProjetController::class, 'services'])->name('services');
 
 
 Route::delete('/admin/user/{id}/delete', [AdminController::class, 'supprimerUtilisateur'])->name('admin.user.delete');
