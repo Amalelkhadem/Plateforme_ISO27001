@@ -44,6 +44,8 @@ $conformite = $project->uncheckedCategories->first(function ($category) {
     <p>Améliorez vos politiques de sécurité de l'information en les rendant plus détaillées et en les alignant sur les exigences spécifiques de la norme ISO 27001. Veillez à ce que vos politiques comprennent des éléments tels que la gestion des changements, la gestion des incidents de sécurité et la continuité des activités.</p>
 @elseif($conformite->category_label == 75)
     <p>Effectuez une revue approfondie de vos politiques de sécurité de l'information existantes et identifiez les domaines où des améliorations supplémentaires peuvent être apportées. Veillez à ce que vos politiques soient régulièrement mises à jour pour refléter les évolutions des menaces de sécurité et les nouvelles exigences réglementaires.</p>
+@elseif($conformite->category_label == 100)
+    <p>Bonne pratique.</p>
 @endif
 @endif               
  </td>
@@ -66,6 +68,8 @@ $conformite = $project->uncheckedCategories->first(function ($category) {
     <p>Établissez des procédures formelles pour la gestion des rôles et des responsabilités en matière de sécurité de l'information. Développez des descriptions de poste détaillées qui incluent les responsabilités spécifiques liées à la sécurité de l'information. Assurez-vous que les rôles et les responsabilités sont clairement communiqués à tous les employés.</p>
 @elseif($conformite->category_label == 75)
     <p>Effectuez des évaluations régulières pour vous assurer que les rôles et les responsabilités en matière de sécurité de l'information sont respectés. Identifiez les domaines où des améliorations supplémentaires peuvent être apportées et mettez en place des plans d'action pour les résoudre. Encouragez la participation et l'engagement actif de tous les employés dans la gestion de la sécurité de l'information.</p>
+@elseif($conformite->category_label == 100)
+    <p>Bonne pratique.</p>
 @endif
 @endif
  </td>
@@ -88,7 +92,9 @@ $conformite = $project->uncheckedCategories->first(function ($category) {
     <p>Établissez des procédures formelles de séparation des tâches pour les processus critiques. Assurez-vous que les responsabilités et les autorisations sont clairement définies et documentées. Effectuez régulièrement des audits internes pour vérifier la conformité et identifiez les domaines où des améliorations supplémentaires peuvent être apportées.</p>
 @elseif($conformite->category_label == 75)
     <p>Continuez à renforcer la séparation des tâches en mettant en place des contrôles supplémentaires tels que des revues périodiques et des processus de validation croisée. Effectuez des formations et des sensibilisations pour maintenir la prise de conscience des employés concernant l'importance de la séparation des tâches.</p>
-@endif
+@elseif($conformite->category_label == 100)
+    <p>Bonne pratique.</p>
+    @endif
 @endif
  </td>
     </tr>
@@ -110,7 +116,9 @@ $conformite = $project->uncheckedCategories->first(function ($category) {
     <p>Établissez des objectifs spécifiques en matière de sécurité de l'information, alignés sur les objectifs stratégiques de l'organisme. Assurez-vous que la direction évalue régulièrement les performances en matière de sécurité de l'information et prend des mesures correctives lorsque cela est nécessaire. Impliquez la direction dans la communication des résultats des audits et des revues de conformité.</p>
 @elseif($conformite->category_label == 75)
     <p>Continuez à soutenir activement la sécurité de l'information en intégrant des considérations de sécurité dans les processus décisionnels et les activités quotidiennes. Encouragez la direction à participer à des formations et à des événements liés à la sécurité de l'information pour rester informée des meilleures pratiques.</p>
-@endif
+@elseif($conformite->category_label == 100)
+    <p>Bonne pratique.</p>
+    @endif
 @endif
  </td>
     </tr>
@@ -132,7 +140,9 @@ $conformite = $project->uncheckedCategories->first(function ($category) {
     <p>Établissez des protocoles de communication clairs pour les incidents de sécurité de l'information, y compris les informations à fournir aux autorités compétentes. Mettez en place des mécanismes de suivi pour vous assurer que les rapports sont soumis en temps opportun. Assurez-vous que votre organisme respecte toutes les obligations légales en matière de signalement des incidents de sécurité.</p>
 @elseif($conformite->category_label == 75)
     <p>Continuez à maintenir des canaux de communication réguliers et efficaces avec les autorités compétentes. Effectuez des exercices réguliers de gestion des incidents pour vous assurer que les procédures de contact sont bien comprises et suivies par tous les membres de l'organisme.</p>
-@endif
+@elseif($conformite->category_label == 100)
+    <p>Bonne pratique.</p>
+    @endif
 @endif
  </td>
     </tr>
@@ -155,6 +165,8 @@ $conformite = $project->uncheckedCategories->first(function ($category) {
 </p>
 @elseif($conformite->category_label == 75)
     <p>Continuez à maintenir des relations étroites avec ces groupes et cherchez des opportunités de collaboration. Assurez-vous que les retours d'expérience des groupes d'intérêts particuliers sont pris en compte dans les processus de prise de décision liés à la sécurité de l'information.</p>
+    @elseif($conformite->category_label == 100)
+    <p>Bonne pratique.</p>
 @endif
 @endif
  </td>
@@ -178,6 +190,8 @@ $conformite = $project->uncheckedCategories->first(function ($category) {
 </p>
 @elseif($conformite->category_label == 75)
     <p>Continuez à améliorer votre processus de collecte et d'analyse des informations sur les menaces. Établissez des mécanismes de partage d'information avec des partenaires externes, tels que des fournisseurs de services de sécurité, pour bénéficier de perspectives et d'expertise supplémentaires.</p>
+    @elseif($conformite->category_label == 100)
+    <p>Bonne pratique.</p>
 @endif
 @endif
  </td>
@@ -201,6 +215,8 @@ $conformite = $project->uncheckedCategories->first(function ($category) {
 </p>
 @elseif($conformite->category_label == 75)
     <p>Continuez à renforcer les contrôles de sécurité de l'information et à promouvoir une culture de la sécurité au sein de l'équipe de projet. Effectuez des évaluations régulières des risques et des contrôles de sécurité pour garantir leur pertinence et leur efficacité.</p>
+    @elseif($conformite->category_label == 100)
+    <p>Bonne pratique.</p>
 @endif
 @endif
  </td>
@@ -224,6 +240,8 @@ $conformite = $project->uncheckedCategories->first(function ($category) {
 </p>
 @elseif($conformite->category_label == 75)
     <p>Continuez à améliorer et à maintenir l'inventaire des actifs d'information à jour. Assurez-vous que tous les actifs sont correctement documentés, y compris les détails tels que leur importance, leur sensibilité et leur valeur pour l'organisme. Établissez des procédures pour la gestion du cycle de vie des actifs, y compris leur archivage et leur élimination appropriée.</p>
+    @elseif($conformite->category_label == 100)
+    <p>Bonne pratique.</p>
 @endif
 @endif
  </td>
@@ -247,6 +265,8 @@ $conformite = $project->uncheckedCategories->first(function ($category) {
 </p>
 @elseif($conformite->category_label == 75)
     <p>Continuez à renforcer la politique d'utilisation acceptable en intégrant les retours d'expérience et les enseignements tirés des incidents passés. Effectuez des contrôles réguliers pour vous assurer que la politique est correctement suivie et appliquée. Encouragez une culture de la sécurité de l'information au sein de l'organisme et favorisez la responsabilisation des utilisateurs.</p>
+    @elseif($conformite->category_label == 100)
+    <p>Bonne pratique.</p>
 @endif
 @endif
  </td>
@@ -270,6 +290,8 @@ $conformite = $project->uncheckedCategories->first(function ($category) {
 </p>
 @elseif($conformite->category_label == 75)
     <p>Continuer à renforcer les pratiques de restitution d'actifs en effectuant des audits internes réguliers pour évaluer l'efficacité des processus en place. Identifier les domaines où des améliorations supplémentaires peuvent être apportées et mettre en œuvre des actions correctives appropriées.</p>
+    @elseif($conformite->category_label == 100)
+    <p>Bonne pratique.</p>
 @endif
 @endif
  </td>
@@ -293,6 +315,8 @@ $conformite = $project->uncheckedCategories->first(function ($category) {
 </p>
 @elseif($conformite->category_label == 75)
     <p>Améliorer la gouvernance de la classification des informations en réalisant des audits réguliers pour évaluer l'efficacité des procédures de classification en place. Identifier les domaines où des améliorations supplémentaires peuvent être apportées et mettre en œuvre des actions correctives appropriées.</p>
+    @elseif($conformite->category_label == 100)
+    <p>Bonne pratique.</p>
 @endif
 @endif
  </td>
@@ -316,6 +340,8 @@ $conformite = $project->uncheckedCategories->first(function ($category) {
 </p>
 @elseif($conformite->category_label == 75)
     <p>Améliorer la gouvernance de la labellisation des informations en réalisant des audits réguliers pour évaluer l'efficacité des procédures de labellisation en place. Identifier les domaines où des améliorations supplémentaires peuvent être apportées et mettre en œuvre des actions correctives appropriées.</p>
+    @elseif($conformite->category_label == 100)
+    <p>Bonne pratique.</p>
 @endif
 @endif
  </td>
@@ -339,6 +365,8 @@ $conformite = $project->uncheckedCategories->first(function ($category) {
 </p>
 @elseif($conformite->category_label == 75)
     <p>Continuer à renforcer les pratiques de transfert d'information en réalisant des audits réguliers pour évaluer l'efficacité des mesures de sécurité mises en place. Identifier les domaines où des améliorations supplémentaires peuvent être apportées et mettre en œuvre des actions correctives appropriées.</p>
+    @elseif($conformite->category_label == 100)
+    <p>Bonne pratique.</p>
 @endif
 @endif
  </td>
@@ -362,6 +390,8 @@ $conformite = $project->uncheckedCategories->first(function ($category) {
 </p>
 @elseif($conformite->category_label == 75)
     <p>Continuez à surveiller les systèmes de contrôle d'accès pour détecter les éventuelles vulnérabilités. Renforcez la sensibilisation des employés aux meilleures pratiques de sécurité, notamment en matière de gestion des mots de passe et d'utilisation des cartes d'identification.</p>
+    @elseif($conformite->category_label == 100)
+    <p>Bonne pratique.</p>
 @endif
 @endif
  </td>
@@ -385,6 +415,8 @@ $conformite = $project->uncheckedCategories->first(function ($category) {
 </p>
 @elseif($conformite->category_label == 75)
     <p>Continuez à améliorer les processus de gestion des identités en utilisant des approches basées sur les rôles pour simplifier l'attribution des droits d'accès. Mettez en place des mécanismes de contrôle supplémentaires, tels que l'authentification à deux facteurs, pour renforcer la sécurité des identités.</p>
+        @elseif($conformite->category_label == 100)
+    <p>Bonne pratique.</p>
 @endif
 @endif
  </td>
@@ -408,6 +440,8 @@ $conformite = $project->uncheckedCategories->first(function ($category) {
 </p>
 @elseif($conformite->category_label == 75)
     <p>Continuer à améliorer les pratiques d'authentification en utilisant des méthodes d'authentification avancées, telles que la biométrie ou l'authentification basée sur le comportement. Mettez en place des mécanismes de surveillance pour détecter les activités d'authentification suspectes. Fournissez des formations régulières sur la sensibilisation à la sécurité des informations d'authentification.</p>
+        @elseif($conformite->category_label == 100)
+    <p>Bonne pratique.</p>
 @endif
 @endif
  </td>
@@ -431,6 +465,8 @@ $conformite = $project->uncheckedCategories->first(function ($category) {
 </p>
 @elseif($conformite->category_label == 75)
     <p>Continuez à améliorer les pratiques de gestion des droits d'accès en mettant en place des mécanismes avancés tels que l'authentification à deux facteurs pour renforcer la sécurité. Mettez en œuvre des processus de gestion des changements pour garantir que les droits d'accès sont gérés de manière contrôlée et documentée.</p>
+        @elseif($conformite->category_label == 100)
+    <p>Bonne pratique.</p>
 @endif
 @endif
  </td>
@@ -454,6 +490,8 @@ $conformite = $project->uncheckedCategories->first(function ($category) {
 </p>
 @elseif($conformite->category_label == 75)
     <p>Continuez à améliorer les pratiques de sécurité des fournisseurs en mettant en place des processus de gestion des risques pour évaluer et atténuer les risques associés aux fournisseurs. Effectuez des audits réguliers pour évaluer la conformité des fournisseurs et identifiez les domaines d'amélioration potentiels. Établissez des partenariats avec des fournisseurs qui ont des certifications de sécurité reconnues.</p>
+        @elseif($conformite->category_label == 100)
+    <p>Bonne pratique.</p>
 @endif
 @endif
  </td>
@@ -477,6 +515,8 @@ $conformite = $project->uncheckedCategories->first(function ($category) {
 </p>
 @elseif($conformite->category_label == 75)
     <p>Continuez à améliorer les pratiques de sécurité des informations dans les accords avec les fournisseurs en mettant en œuvre des mécanismes de suivi et de contrôle plus rigoureux. Exigez des audits de sécurité réguliers pour évaluer la conformité des fournisseurs. Établissez des partenariats avec des fournisseurs qui ont des certifications de sécurité reconnues.</p>
+        @elseif($conformite->category_label == 100)
+    <p>Bonne pratique.</p>
 @endif
 @endif
  </td>
@@ -500,6 +540,8 @@ $conformite = $project->uncheckedCategories->first(function ($category) {
 </p>
 @elseif($conformite->category_label == 75)
     <p>Établir un processus de gestion de la chaîne d'approvisionnement des ICT bien défini, comprenant la documentation des politiques, des procédures et des responsabilités. Effectuer régulièrement des audits de sécurité pour vérifier l'efficacité des contrôles et des mesures mises en place. Encourager la collaboration avec les fournisseurs pour améliorer continuellement la sécurité de la chaîne d'approvisionnement.</p>
+        @elseif($conformite->category_label == 100)
+    <p>Bonne pratique.</p>
 @endif
 @endif
  </td>
@@ -523,6 +565,8 @@ $conformite = $project->uncheckedCategories->first(function ($category) {
 </p>
 @elseif($conformite->category_label == 75)
     <p>Mettre en place un processus robuste de suivi, de révision et de gestion du changement pour les services fournisseurs, en intégrant des mécanismes de contrôle et de suivi automatisés. Renforcer la collaboration avec les fournisseurs en établissant des partenariats stratégiques et en partageant régulièrement les objectifs de sécurité. Impliquer les parties prenantes internes et externes dans le processus de gestion du changement.</p>
+        @elseif($conformite->category_label == 100)
+    <p>Bonne pratique.</p>
 @endif
 @endif
  </td>
@@ -546,6 +590,8 @@ $conformite = $project->uncheckedCategories->first(function ($category) {
     <p>Développer des contrôles de sécurité plus robustes pour l'utilisation de services cloud, tels que l'authentification forte, le chiffrement des données sensibles et la surveillance continue des activités dans le cloud. Mettre en place des mécanismes de suivi et de gestion des incidents liés à la sécurité dans le cloud.</p>
 @elseif($conformite->category_label == 75)
     <p>Établir une gouvernance solide pour l'utilisation de services cloud, en incluant des politiques et des procédures détaillées, des évaluations régulières des risques et des audits de sécurité. Mettre en place des mécanismes de supervision et de contrôle pour assurer la conformité aux politiques et aux exigences de sécurité spécifiques.</p>
+        @elseif($conformite->category_label == 100)
+    <p>Bonne pratique.</p>
 @endif
 @endif
  </td>
@@ -568,6 +614,8 @@ $conformite = $project->uncheckedCategories->first(function ($category) {
     <p>Améliorer les procédures existantes de planification et de préparation de la gestion des incidents de sécurité de l'information. Mettre en place des mécanismes de surveillance et de détection des incidents, tels que des outils de détection d'intrusion et des systèmes de détection des incidents. Mettre à jour régulièrement le plan de continuité des activités en fonction des nouvelles menaces et des changements dans l'environnement de sécurité.</p>
 @elseif($conformite->category_label == 75)
     <p>Renforcer les procédures et les mécanismes de planification et de préparation de la gestion des incidents de sécurité de l'information. Effectuer des évaluations régulières de la préparation aux incidents, y compris des tests de pénétration et des audits de sécurité. Établir des partenariats avec des organismes externes spécialisés dans la gestion des incidents de sécurité pour une assistance et des conseils supplémentaires.</p>
+        @elseif($conformite->category_label == 100)
+    <p>Bonne pratique.</p>
 @endif
 @endif
  </td>
@@ -590,6 +638,8 @@ $conformite = $project->uncheckedCategories->first(function ($category) {
     <p>Améliorer les procédures existantes d'évaluation et de décision sur les événements liés à la sécurité de l'information. Mettre en place des mécanismes de détection d'intrusion et de surveillance des événements de sécurité en temps réel. Développer des critères d'évaluation spécifiques pour déterminer la gravité et l'impact des événements.</p>
 @elseif($conformite->category_label == 75)
     <p>Renforcer les procédures et les mécanismes d'évaluation et de décision sur les événements liés à la sécurité de l'information. Mettre en place des outils avancés d'analyse des événements de sécurité, tels que la corrélation des journaux et l'apprentissage automatique, pour une détection et une évaluation plus précises. Établir des protocoles de communication clairs et des mécanismes de coordination pour une résolution efficace des événements.</p>
+        @elseif($conformite->category_label == 100)
+    <p>Bonne pratique.</p>
 @endif
 @endif
  </td>
@@ -612,6 +662,8 @@ $conformite = $project->uncheckedCategories->first(function ($category) {
     <p>Améliorer les procédures existantes de réponse aux incidents de sécurité de l'information. Mettre en place des mécanismes de détection d'incident en temps réel, tels que des outils de détection d'intrusion et des systèmes de surveillance des journaux. Mettre à jour régulièrement le plan de réponse aux incidents en fonction des nouvelles menaces et des leçons apprises.</p>
 @elseif($conformite->category_label == 75)
     <p>Renforcer les procédures et les mécanismes de réponse aux incidents de sécurité de l'information. Effectuer des exercices de réponse aux incidents à grande échelle impliquant des parties prenantes internes et externes pour tester la coordination et la communication. Établir des partenariats avec des organismes spécialisés dans la réponse aux incidents pour une assistance et des conseils supplémentaires.</p>
+        @elseif($conformite->category_label == 100)
+    <p>Bonne pratique.</p>
 @endif
 @endif
  </td>
@@ -634,6 +686,8 @@ $conformite = $project->uncheckedCategories->first(function ($category) {
     <p>Améliorer les procédures existantes pour tirer des enseignements des incidents de sécurité de l'information. Mettre en place des mécanismes de suivi pour s'assurer que les recommandations découlant des incidents sont mises en œuvre de manière appropriée. Mettre en place un processus de révision régulière des incidents passés pour identifier les tendances et les domaines d'amélioration.</p>
 @elseif($conformite->category_label == 75)
     <p>Renforcer les procédures et les mécanismes pour tirer des enseignements des incidents de sécurité de l'information. Effectuer des évaluations approfondies des incidents majeurs impliquant une analyse détaillée des causes racines et des recommandations d'amélioration. Fournir des ressources supplémentaires pour mettre en œuvre les mesures correctives et préventives identifiées.</p>
+        @elseif($conformite->category_label == 100)
+    <p>Bonne pratique.</p>
 @endif
 @endif
  </td>
@@ -656,6 +710,8 @@ $conformite = $project->uncheckedCategories->first(function ($category) {
     <p>Améliorer les procédures existantes de recueil des preuves en cas d'incident de sécurité de l'information. Mettre en place des solutions technologiques avancées pour faciliter la collecte, la préservation et l'analyse des preuves numériques. Mettre en œuvre des mécanismes de suivi pour s'assurer de la conformité aux procédures de recueil des preuves.</p>
 @elseif($conformite->category_label == 75)
     <p>Renforcer les procédures et les mécanismes de recueil des preuves en cas d'incident de sécurité de l'information. Former une équipe spécialisée chargée du recueil des preuves et de l'analyse forensique. Mettre en place des protocoles de collaboration avec les autorités compétentes pour garantir l'admissibilité des preuves recueillies.</p>
+        @elseif($conformite->category_label == 100)
+    <p>Bonne pratique.</p>
 @endif
 @endif
  </td>
@@ -678,6 +734,8 @@ $conformite = $project->uncheckedCategories->first(function ($category) {
     <p>Améliorer les mesures de sécurité de l'information existantes en cas de perturbations. Mettre en place des mécanismes avancés de sauvegarde et de récupération des données, tels que la réplication des données et la virtualisation des serveurs. Renforcer la résilience des systèmes et des réseaux pour assurer une disponibilité continue en cas de perturbations.</p>
 @elseif($conformite->category_label == 75)
     <p>Renforcer les mesures de sécurité de l'information en cas de perturbations. Mettre en place des solutions de continuité des activités plus sophistiquées, telles que des sites de secours géographiquement dispersés et la mobilité des employés. Effectuer des évaluations régulières des risques et des tests de reprise après sinistre pour maintenir la préparation en cas de perturbations.</p>
+        @elseif($conformite->category_label == 100)
+    <p>Bonne pratique.</p>
 @endif
 @endif
  </td>
@@ -700,6 +758,8 @@ $conformite = $project->uncheckedCategories->first(function ($category) {
     <p>Améliorer les plans de continuité des activités des technologies de l'information et des communications. Mettre en place des mécanismes de sauvegarde et de récupération avancés pour les données et les systèmes TIC critiques. S'assurer que les plans de continuité des activités sont alignés sur les objectifs de l'organisation et régulièrement mis à jour en fonction des changements technologiques.</p>
 @elseif($conformite->category_label == 75)
     <p>Renforcer l'état de préparation des technologies de l'information et des communications pour la continuité des activités. Mettre en place des solutions de redondance et de haute disponibilité pour les systèmes TIC critiques. Effectuer des audits réguliers pour évaluer la résilience des TIC et mettre en œuvre des améliorations en fonction des résultats.</p>
+        @elseif($conformite->category_label == 100)
+    <p>Bonne pratique.</p>
 @endif
 @endif
  </td>
@@ -722,6 +782,8 @@ $conformite = $project->uncheckedCategories->first(function ($category) {
     <p>Améliorer les politiques et les procédures existantes pour répondre aux exigences légales, statutaires, réglementaires et contractuelles en matière de sécurité de l'information. Mettre en œuvre des mesures de contrôle appropriées pour garantir la conformité. Effectuer des audits réguliers pour évaluer l'efficacité des processus de conformité.</p>
 @elseif($conformite->category_label == 75)
     <p>Renforcer la conformité aux exigences légales, statutaires, réglementaires et contractuelles en matière de sécurité de l'information. Mettre en place des mécanismes avancés de suivi et de rapport pour assurer la conformité continue. Collaborer avec les parties prenantes internes et externes pour maintenir une compréhension claire des obligations légales et réglementaires.</p>
+        @elseif($conformite->category_label == 100)
+    <p>Bonne pratique.</p>
 @endif
 @endif
  </td>
@@ -744,6 +806,8 @@ $conformite = $project->uncheckedCategories->first(function ($category) {
     <p>Améliorer les mesures de protection des droits de propriété intellectuelle de l'organisation. Mettre en place des contrôles technologiques et des restrictions d'accès pour protéger les actifs de propriété intellectuelle. Examiner régulièrement les politiques et les procédures pour s'assurer qu'elles sont à jour et efficaces.</p>
 @elseif($conformite->category_label == 75)
     <p>Renforcer la protection des droits de propriété intellectuelle de l'organisation. Collaborer avec des experts juridiques spécialisés dans la propriété intellectuelle pour développer des stratégies de protection appropriées. Sensibiliser et former régulièrement le personnel aux droits de propriété intellectuelle et à leur importance pour l'organisation.</p>
+        @elseif($conformite->category_label == 100)
+    <p>Bonne pratique.</p>
 @endif
 @endif
  </td>
@@ -766,6 +830,8 @@ $conformite = $project->uncheckedCategories->first(function ($category) {
     <p>Améliorer les mesures de protection des enregistrements existantes. Mettre en place des contrôles d'accès et des mécanismes de suivi pour assurer la confidentialité et l'intégrité des enregistrements. Mettre en œuvre des solutions de sauvegarde et de récupération avancées pour minimiser les risques de perte de données.</p>
 @elseif($conformite->category_label == 75)
     <p>Renforcer la protection des enregistrements de manière proactive. Mettre en place des stratégies de gestion des enregistrements pour assurer leur conformité, leur intégrité et leur disponibilité à long terme. Effectuer des évaluations régulières des risques et des audits de sécurité pour maintenir un niveau élevé de protection des enregistrements.</p>
+        @elseif($conformite->category_label == 100)
+    <p>Bonne pratique.</p>
 @endif
 @endif
  </td>
@@ -788,6 +854,8 @@ $conformite = $project->uncheckedCategories->first(function ($category) {
     <p>Améliorer les mesures de protection des informations personnelles identifiables (PII). Mettre en place des contrôles d'accès stricts, des méthodes de cryptage et des mécanismes de pseudonymisation pour protéger les PII. Effectuer des évaluations régulières des risques et des tests de vulnérabilité pour identifier et corriger les éventuelles lacunes de sécurité.</p>
 @elseif($conformite->category_label == 75)
     <p>Renforcer la protection des informations personnelles identifiables (PII) en mettant en place des mesures de sécurité avancées. Cela peut inclure la mise en œuvre de solutions de sécurité avancées, telles que la surveillance des activités suspectes, la gestion des accès privilégiés et l'utilisation de techniques de détection des intrusions. Effectuer des audits réguliers pour garantir la conformité aux normes de confidentialité et de protection des PII.</p>
+        @elseif($conformite->category_label == 100)
+    <p>Bonne pratique.</p>
 @endif
 @endif
  </td>
@@ -810,6 +878,8 @@ $conformite = $project->uncheckedCategories->first(function ($category) {
     <p>Renforcer les examens indépendants de la sécurité de l'information en mettant en place des processus plus rigoureux. Collaborer avec des auditeurs externes expérimentés pour effectuer des évaluations approfondies de la sécurité de l'information. Examiner les recommandations et les résultats des examens et mettre en place des plans d'action pour améliorer la sécurité de l'information.</p>
 @elseif($conformite->category_label == 75)
     <p>Optimiser les examens indépendants de la sécurité de l'information en les intégrant dans un programme de gouvernance de la sécurité de l'information plus large. Mettre en place des processus d'audit réguliers pour évaluer la conformité et l'efficacité des contrôles de sécurité. Collaborer avec des auditeurs externes pour garantir une évaluation objective et indépendante de la sécurité de l'information.</p>
+        @elseif($conformite->category_label == 100)
+    <p>Bonne pratique.</p>
 @endif
 @endif
  </td>
@@ -832,6 +902,8 @@ $conformite = $project->uncheckedCategories->first(function ($category) {
     <p>Améliorer les mesures de conformité aux politiques, règles et normes de sécurité de l'information. Renforcer la sensibilisation du personnel aux politiques de sécurité de l'information et offrir une formation continue sur les pratiques de sécurité. Effectuer des évaluations régulières de conformité pour identifier les écarts et prendre des mesures correctives appropriées.</p>
 @elseif($conformite->category_label == 75)
     <p>Renforcer la conformité aux politiques, règles et normes de sécurité de l'information en mettant en place des processus plus rigoureux. Effectuer des audits internes réguliers pour évaluer la conformité et l'efficacité des pratiques de sécurité. Collaborer avec des experts externes pour obtenir des évaluations indépendantes de la conformité.</p>
+        @elseif($conformite->category_label == 100)
+    <p>Bonne pratique.</p>
 @endif
 @endif
  </td>
@@ -854,6 +926,8 @@ $conformite = $project->uncheckedCategories->first(function ($category) {
     <p>Améliorer les procédures d'exploitation documentées en les alignant sur les meilleures pratiques de l'industrie et les normes de qualité. Mettre en place des mécanismes de suivi pour s'assurer que les procédures sont suivies de manière consistante. Effectuer des revues régulières des procédures pour identifier les opportunités d'amélioration.</p>
 @elseif($conformite->category_label == 75)
     <p>Optimiser les procédures d'exploitation documentées en mettant en place des processus de gestion de la qualité et de l'amélioration continue. Effectuer des audits réguliers pour évaluer la conformité et l'efficacité des procédures. Encourager les commentaires des employés pour identifier les lacunes et les points d'amélioration dans les procédures documentées.</p>
+        @elseif($conformite->category_label == 100)
+    <p>Bonne pratique.</p>
 @endif
 @endif
                 

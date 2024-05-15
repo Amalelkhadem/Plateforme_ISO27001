@@ -42,6 +42,8 @@ $conformite = $project->uncheckedCategories->first(function ($category) {
     <p>Renforcer la sécurité des équipements des utilisateurs terminaux en utilisant des mesures de protection supplémentaires. Cela peut inclure l'utilisation de solutions de gestion des appareils mobiles pour contrôler et sécuriser les smartphones et les tablettes, la mise en place de pare-feu et d'antivirus sur les ordinateurs portables, et l'utilisation de la biométrie ou de l'authentification à deux facteurs pour renforcer l'accès aux équipements.</p>
 @elseif($conformite->category_label == 75)
     <p>Optimiser la sécurité des équipements des utilisateurs terminaux en mettant en place des processus de gestion rigoureux. Cela peut inclure la formation régulière des utilisateurs sur les meilleures pratiques de sécurité, la surveillance de l'utilisation des équipements, l'application des mises à jour de sécurité et des correctifs logiciels, et la mise en place de politiques de réponse aux incidents de sécurité.</p>
+        @elseif($conformite->category_label == 100)
+    <p>Bonne pratique.</p>
 @endif
 @endif
 </td>
@@ -64,6 +66,8 @@ $conformite = $project->uncheckedCategories->first(function ($category) {
     <p>Renforcer la sécurité des droits d'accès privilégiés en utilisant des mesures de protection supplémentaires. Cela peut inclure la mise en place de mécanismes de journalisation et d'audit pour suivre les actions des utilisateurs privilégiés, la mise en œuvre de processus de revue régulière des droits d'accès, la segmentation des privilèges pour limiter les actions possibles, et l'utilisation de technologies telles que la gestion des accès à privilèges (PAM) pour renforcer la sécurité des comptes privilégiés.</p>
 @elseif($conformite->category_label == 75)
     <p>Optimiser la gestion des droits d'accès privilégiés en mettant en place des processus de gestion rigoureux. Cela peut inclure l'utilisation de solutions de gestion des identités et des accès (IAM) pour centraliser et contrôler les droits d'accès, la formation continue des administrateurs sur les meilleures pratiques de gestion des privilèges, la revue régulière des droits d'accès privilégiés, et l'application de principes de moindre privilège pour réduire les risques associés aux droits excessifs.</p>
+        @elseif($conformite->category_label == 100)
+    <p>Bonne pratique.</p>
 @endif
 @endif
 </td>
@@ -86,6 +90,8 @@ $conformite = $project->uncheckedCategories->first(function ($category) {
     <p>Renforcer la sécurité de la restriction d'accès à l'information en utilisant des mesures de protection supplémentaires. Cela peut inclure la mise en place de pare-feu et de systèmes de détection des intrusions pour contrôler l'accès aux informations sensibles, la mise en œuvre de contrôles de sécurité sur les systèmes de stockage et de partage de fichiers, et la limitation des droits d'accès en fonction du principe du moindre privilège.</p>
 @elseif($conformite->category_label == 75)
     <p>Optimiser la restriction d'accès à l'information en mettant en place des processus de gestion rigoureux. Cela peut inclure l'utilisation de solutions de gestion des droits numériques pour contrôler et surveiller l'accès aux informations sensibles, la réalisation d'audits réguliers de conformité, la formation continue des employés sur les politiques et procédures de sécurité de l'information, et la sensibilisation à la protection de la vie privée et à la conformité aux lois et réglementations relatives à la confidentialité des données.</p>
+        @elseif($conformite->category_label == 100)
+    <p>Bonne pratique.</p>
 @endif
 @endif
 </td>
@@ -108,6 +114,8 @@ $conformite = $project->uncheckedCategories->first(function ($category) {
     <p>Renforcer la sécurité de l'accès au code source en utilisant des mesures de protection supplémentaires. Cela peut inclure l'utilisation de technologies de gestion des sources pour contrôler et suivre l'accès au code source, la mise en œuvre de procédures de revue du code pour détecter les vulnérabilités et les erreurs de programmation, et la mise en place de contrôles de sécurité pour empêcher toute modification non autorisée du code source.</p>
 @elseif($conformite->category_label == 75)
     <p>Optimiser la gestion de l'accès au code source en mettant en place des processus de gestion rigoureux. Cela peut inclure l'utilisation de systèmes de contrôle de version pour suivre les modifications apportées au code source, la formation continue des développeurs sur les meilleures pratiques de sécurité du code, la réalisation d'audits réguliers de sécurité du code et la mise en place de politiques de divulgation responsable pour signaler les vulnérabilités découvertes.</p>
+        @elseif($conformite->category_label == 100)
+    <p>Bonne pratique.</p>
 @endif
 @endif
 </td>
@@ -130,6 +138,8 @@ $conformite = $project->uncheckedCategories->first(function ($category) {
     <p>Renforcer la sécurité de l'authentification en utilisant des mesures de protection supplémentaires. Cela peut inclure l'utilisation de technologies d'authentification biométrique, l'implémentation de solutions de gestion des identités et des accès (IAM) pour centraliser et gérer les informations d'authentification, et l'intégration de protocoles d'authentification sécurisés tels que OAuth ou SAML.</p>
 @elseif($conformite->category_label == 75)
     <p>Optimiser l'authentification sécurisée en mettant en place des processus de gestion rigoureux. Cela peut inclure la surveillance régulière des journaux d'authentification pour détecter les tentatives d'accès non autorisées, la formation continue des utilisateurs sur les bonnes pratiques en matière de sécurité des mots de passe, l'utilisation de solutions d'authentification à distance pour contrôler l'accès aux ressources internes, et l'intégration de mécanismes d'authentification adaptatifs pour détecter les comportements suspects.</p>
+        @elseif($conformite->category_label == 100)
+    <p>Bonne pratique.</p>
 @endif
 @endif
 </td>
@@ -152,6 +162,8 @@ $conformite = $project->uncheckedCategories->first(function ($category) {
     <p>Renforcer la gestion de la capacité en utilisant des mesures de protection supplémentaires. Cela peut inclure l'utilisation de technologies de virtualisation et de conteneurisation pour optimiser l'utilisation des ressources, la mise en place de mécanismes d'équilibrage de charge pour répartir la demande de manière équilibrée, et l'automatisation des processus de provisionnement et de mise à l'échelle des ressources.</p>
 @elseif($conformite->category_label == 75)
     <p>Optimiser la gestion de la capacité en mettant en place des processus de gestion rigoureux. Cela peut inclure l'utilisation de solutions de surveillance et de gestion des performances pour anticiper les problèmes de capacité, la réalisation d'analyses prédictives pour estimer les besoins futurs, la mise en place de plans d'urgence pour faire face à des situations de demande exceptionnellement élevée, et la coordination avec les équipes opérationnelles pour garantir une réponse efficace aux besoins de capacité.</p>
+        @elseif($conformite->category_label == 100)
+    <p>Bonne pratique.</p>
 @endif
 @endif
 </td>
@@ -174,6 +186,8 @@ $conformite = $project->uncheckedCategories->first(function ($category) {
     <p>Renforcer la protection contre les logiciels malveillants en utilisant des mesures de protection supplémentaires. Cela peut inclure la mise en place de systèmes de prévention des intrusions, l'utilisation de solutions de sandboxing pour isoler les applications potentiellement dangereuses, et la réalisation régulière d'analyses de vulnérabilités et de tests de pénétration.</p>
 @elseif($conformite->category_label == 75)
     <p>Optimiser la protection contre les logiciels malveillants en mettant en place des processus de gestion rigoureux. Cela peut inclure la formation régulière des utilisateurs sur la détection et la prévention des logiciels malveillants, la mise en place de mécanismes de réponse aux incidents de sécurité, la réalisation d'audits de sécurité réguliers, et la surveillance proactive des menaces et des vulnérabilités.</p>
+        @elseif($conformite->category_label == 100)
+    <p>Bonne pratique.</p>
 @endif
 @endif
 </td>
@@ -196,6 +210,8 @@ $conformite = $project->uncheckedCategories->first(function ($category) {
     <p>Renforcer la gestion des vulnérabilités techniques en utilisant des mesures de protection supplémentaires. Cela peut inclure l'utilisation de scanners de vulnérabilités pour identifier les failles de sécurité, la mise en place d'une gestion centralisée des correctifs, et l'adoption de bonnes pratiques de configuration sécurisée pour les systèmes et les applications.</p>
 @elseif($conformite->category_label == 75)
     <p>Optimiser la gestion des vulnérabilités techniques en mettant en place des processus de gestion rigoureux. Cela peut inclure l'intégration de la gestion des vulnérabilités dans le cycle de développement logiciel, la réalisation régulière d'audits de sécurité, la formation continue du personnel sur les bonnes pratiques de sécurité, et la surveillance proactive des nouvelles vulnérabilités et des avis de sécurité.</p>
+        @elseif($conformite->category_label == 100)
+    <p>Bonne pratique.</p>
 @endif
 @endif
 </td>
@@ -218,6 +234,8 @@ $conformite = $project->uncheckedCategories->first(function ($category) {
     <p>Renforcer la gestion de la configuration en utilisant des mesures de protection supplémentaires. Cela peut inclure l'utilisation d'outils de gestion de la configuration, la mise en place de contrôles d'accès, et la réalisation d'audits réguliers.</p>
 @elseif($conformite->category_label == 75)
     <p>Optimiser la gestion de la configuration en intégrant des processus de gestion rigoureux. Cela peut inclure l'automatisation des processus, l'utilisation d'outils de gestion de configuration avancés, et l'établissement de mécanismes de surveillance et de reporting.</p>
+        @elseif($conformite->category_label == 100)
+    <p>Bonne pratique.</p>
 @endif
 @endif
 </td>
@@ -240,6 +258,8 @@ $conformite = $project->uncheckedCategories->first(function ($category) {
     <p>Renforcer la suppression de l'information en utilisant des mesures de protection supplémentaires. Cela peut inclure la mise en œuvre de processus de suppression automatisés, l'utilisation de méthodes de suppression certifiées, et la réalisation d'audits réguliers pour s'assurer de la conformité aux politiques de suppression.</p>
 @elseif($conformite->category_label == 75)
     <p>Optimiser la suppression de l'information en mettant en place des processus de gestion rigoureux. Cela peut inclure l'intégration de la suppression de l'information dans le cycle de vie des données, la formation du personnel sur les bonnes pratiques de suppression, et l'utilisation de technologies avancées pour garantir la suppression sécurisée des données sensibles.</p>
+        @elseif($conformite->category_label == 100)
+    <p>Bonne pratique.</p>
 @endif
 @endif
 </td>
@@ -262,6 +282,8 @@ $conformite = $project->uncheckedCategories->first(function ($category) {
     <p>Renforcer le masquage des données en utilisant des mesures de protection supplémentaires. Cela peut inclure l'utilisation d'outils de masquage des données, l'application de techniques de masquage avancées, et la réalisation de tests réguliers pour s'assurer de l'efficacité du masquage.</p>
 @elseif($conformite->category_label == 75)
     <p>Optimiser le masquage des données en mettant en place des processus de gestion rigoureux. Cela peut inclure l'intégration du masquage des données dans le cycle de vie des données, la formation du personnel sur les bonnes pratiques de masquage, et l'utilisation de technologies avancées pour garantir l'efficacité et l'efficience du masquage.</p>
+        @elseif($conformite->category_label == 100)
+    <p>Bonne pratique.</p>
 @endif
 @endif
 </td>
@@ -284,6 +306,8 @@ $conformite = $project->uncheckedCategories->first(function ($category) {
     <p>Renforcer la prévention des fuites de données en utilisant des mesures de protection supplémentaires. Cela peut inclure la mise en place de solutions de prévention des fuites de données (DLP), l'application de politiques de contrôle strictes pour le transfert et le stockage des données sensibles, et la sensibilisation continue du personnel aux risques et aux bonnes pratiques de prévention des fuites de données.</p>
 @elseif($conformite->category_label == 75)
     <p>Optimiser la prévention des fuites de données en mettant en place des processus de gestion rigoureux. Cela peut inclure la surveillance continue des activités liées aux données, l'établissement de mécanismes d'alerte précoce pour détecter les fuites potentielles, et l'amélioration continue des contrôles de prévention des fuites de données en fonction des évaluations de risques et des incidents passés.</p>
+        @elseif($conformite->category_label == 100)
+    <p>Bonne pratique.</p>
 @endif
 @endif
 </td>
@@ -306,6 +330,8 @@ $conformite = $project->uncheckedCategories->first(function ($category) {
     <p>Renforcer la sauvegarde de l'information en utilisant des mesures de protection supplémentaires. Cela peut inclure la duplication des sauvegardes pour une redondance, le chiffrement des sauvegardes sensibles, la sauvegarde sur des supports hors site ou dans le cloud, et la mise en place de contrôles d'accès stricts aux sauvegardes.</p>
 @elseif($conformite->category_label == 75)
     <p>Optimiser la sauvegarde de l'information en mettant en place des processus de gestion rigoureux. Cela peut inclure l'automatisation des sauvegardes, la surveillance des sauvegardes pour détecter les erreurs ou les échecs, et l'amélioration continue des politiques et des procédures de sauvegarde en fonction des évaluations de risques et des incidents passés.</p>
+        @elseif($conformite->category_label == 100)
+    <p>Bonne pratique.</p>
 @endif
 @endif
 </td>
@@ -328,6 +354,8 @@ $conformite = $project->uncheckedCategories->first(function ($category) {
     <p>Renforcer la redondance des installations de traitement de l'information en utilisant des mesures de protection supplémentaires. Cela peut inclure la mise en place de systèmes de secours, l'utilisation de technologies de virtualisation pour la haute disponibilité, l'utilisation de clusters ou de grappes de serveurs, et la réalisation de tests réguliers pour s'assurer de la résilience du système.</p>
 @elseif($conformite->category_label == 75)
     <p>Optimiser la redondance des installations de traitement de l'information en mettant en place des processus de gestion rigoureux. Cela peut inclure la surveillance continue des systèmes redondants, l'évaluation régulière de la capacité et des performances, et l'amélioration continue des mécanismes de redondance en fonction des évaluations de risques et des incidents passés.</p>
+        @elseif($conformite->category_label == 100)
+    <p>Bonne pratique.</p>
 @endif
 @endif
 </td>
@@ -350,6 +378,8 @@ $conformite = $project->uncheckedCategories->first(function ($category) {
     <p>Renforcer la journalisation (logs) en utilisant des mesures de protection supplémentaires. Cela peut inclure la centralisation des journaux dans un système de gestion des informations de sécurité (SIEM), l'utilisation de techniques de corrélation des journaux pour détecter les schémas d'attaques, la mise en place de contrôles d'accès stricts aux journaux, et la réalisation de tests réguliers pour vérifier l'intégrité des journaux.</p>
 @elseif($conformite->category_label == 75)
     <p>Optimiser la journalisation (logs) en mettant en place des processus de gestion rigoureux. Cela peut inclure l'automatisation de la collecte et de l'analyse des journaux, la formation du personnel sur l'interprétation des journaux, et l'amélioration continue des politiques et des procédures de journalisation en fonction des évaluations de risques et des incidents passés.</p>
+        @elseif($conformite->category_label == 100)
+    <p>Bonne pratique.</p>
 @endif
 @endif
 </td>
@@ -372,6 +402,8 @@ $conformite = $project->uncheckedCategories->first(function ($category) {
     <p>Renforcer la surveillance des activités en utilisant des mesures de protection supplémentaires. Cela peut inclure la mise en place de systèmes de détection d'intrusion (IDS) ou de prévention d'intrusion (IPS), l'utilisation de techniques d'analyse comportementale pour détecter les activités anormales, l'intégration de la surveillance des activités avec un système de gestion des informations de sécurité (SIEM), et la formation du personnel sur la reconnaissance des comportements suspects.</p>
 @elseif($conformite->category_label == 75)
     <p>Optimiser la surveillance des activités en mettant en place des processus de gestion rigoureux. Cela peut inclure l'automatisation de la surveillance des activités, la mise en place de tableaux de bord et de rapports de surveillance, la formation continue du personnel sur les meilleures pratiques de surveillance, et l'amélioration continue des politiques et des procédures de surveillance en fonction des évaluations de risques et des incidents passés.</p>
+        @elseif($conformite->category_label == 100)
+    <p>Bonne pratique.</p>
 @endif
 @endif
 </td>
@@ -394,6 +426,8 @@ $conformite = $project->uncheckedCategories->first(function ($category) {
     <p>Renforcer la synchronisation d'horloge en utilisant des mesures de protection supplémentaires. Cela peut inclure l'utilisation de serveurs de temps redondants pour une disponibilité accrue, la mise en place de mécanismes de surveillance de la synchronisation d'horloge, l'utilisation de sources de temps externes fiables, et la réalisation de tests réguliers pour vérifier la précision de la synchronisation.</p>
 @elseif($conformite->category_label == 75)
     <p>Optimiser la synchronisation d'horloge en mettant en place des processus de gestion rigoureux. Cela peut inclure l'automatisation de la synchronisation d'horloge, la surveillance continue de la précision de la synchronisation, la synchronisation des horloges sur l'ensemble du réseau informatique, et l'amélioration continue des politiques et des procédures de synchronisation d'horloge en fonction des évaluations de risques et des incidents passés.</p>
+        @elseif($conformite->category_label == 100)
+    <p>Bonne pratique.</p>
 @endif
 @endif
 </td>
@@ -416,6 +450,8 @@ $conformite = $project->uncheckedCategories->first(function ($category) {
     <p>Renforcer l'utilisation de programmes utilitaires privilégiés en utilisant des mesures de protection supplémentaires. Cela peut inclure la mise en place de contrôles de sécurité techniques pour limiter l'accès à ces programmes, l'utilisation de mécanismes d'audit pour enregistrer les activités liées à leur utilisation, et l'application de contrôles de sécurité supplémentaires, tels que la validation des signatures numériques des programmes utilitaires.</p>
 @elseif($conformite->category_label == 75)
     <p>Optimiser l'utilisation de programmes utilitaires privilégiés en mettant en place des processus de gestion rigoureux. Cela peut inclure l'automatisation de la gestion des privilèges pour ces programmes, la surveillance continue de leur utilisation, l'évaluation régulière des risques associés, et l'amélioration continue des politiques et des procédures d'utilisation en fonction des évaluations de risques et des incidents passés.</p>
+        @elseif($conformite->category_label == 100)
+    <p>Bonne pratique.</p>
 @endif
 @endif
 </td>
@@ -438,6 +474,8 @@ $conformite = $project->uncheckedCategories->first(function ($category) {
     <p>Renforcer l'installation de logiciels sur des systèmes opérationnels en utilisant des mesures de protection supplémentaires. Cela peut inclure la mise en place de contrôles techniques pour prévenir l'installation de logiciels non autorisés, l'utilisation de mécanismes de vérification de l'intégrité des logiciels, la limitation des privilèges d'installation aux utilisateurs autorisés, et la réalisation de tests de sécurité après l'installation.</p>
 @elseif($conformite->category_label == 75)
     <p>Optimiser l'installation de logiciels sur des systèmes opérationnels en mettant en place des processus de gestion rigoureux. Cela peut inclure l'automatisation des procédures d'installation, la gestion centralisée des logiciels et des mises à jour, l'utilisation de listes blanches pour restreindre les logiciels autorisés, et l'amélioration continue des politiques et des procédures d'installation en fonction des évaluations de risques et des incidents passés.</p>
+        @elseif($conformite->category_label == 100)
+    <p>Bonne pratique.</p>
 @endif
 @endif
 </td>
@@ -460,6 +498,8 @@ $conformite = $project->uncheckedCategories->first(function ($category) {
     <p>Renforcer la sécurité des réseaux en utilisant des mesures de protection supplémentaires. Cela peut inclure la mise en place de mécanismes de prévention des intrusions avancés, l'utilisation de technologies de chiffrement robustes, la configuration de systèmes de détection et de prévention des intrusions, l'établissement de politiques strictes de gestion des mots de passe, et la réalisation d'audits de sécurité réguliers.</p>
 @elseif($conformite->category_label == 75)
     <p>Optimiser la sécurité des réseaux en mettant en place des processus de gestion rigoureux. Cela peut inclure l'automatisation des tâches de sécurité réseau, l'utilisation de solutions de gestion centralisée des configurations, la mise en place de mécanismes de surveillance en temps réel, l'analyse régulière des journaux de sécurité, et l'amélioration continue des politiques et des procédures de sécurité des réseaux en fonction des évaluations de risques et des incidents passés.</p>
+        @elseif($conformite->category_label == 100)
+    <p>Bonne pratique.</p>
 @endif
 @endif
 </td>
@@ -482,6 +522,8 @@ $conformite = $project->uncheckedCategories->first(function ($category) {
     <p>Renforcer la sécurité des services réseau en utilisant des mesures de protection supplémentaires. Cela peut inclure la mise en place de pare-feu pour contrôler le trafic vers les services, l'utilisation de technologies de chiffrement robustes pour protéger les données, la configuration de mécanismes de prévention des intrusions, la réalisation de tests de pénétration sur les services, et l'établissement de politiques strictes de gestion des mots de passe.</p>
 @elseif($conformite->category_label == 75)
     <p>Optimiser la sécurité des services réseau en mettant en place des processus de gestion rigoureux. Cela peut inclure l'automatisation des tâches de sécurité liées aux services réseau, la mise en place de mécanismes de surveillance en temps réel, l'analyse régulière des journaux de sécurité des services, l'utilisation de solutions de gestion centralisée des configurations, et l'amélioration continue des politiques et des procédures de sécurité des services réseau en fonction des évaluations de risques et des incidents passés.</p>
+        @elseif($conformite->category_label == 100)
+    <p>Bonne pratique.</p>
 @endif
 @endif
 </td>
@@ -504,6 +546,8 @@ $conformite = $project->uncheckedCategories->first(function ($category) {
     <p>Renforcer la ségrégation des réseaux en utilisant des mesures de protection supplémentaires. Cela peut inclure la mise en place de mécanismes de détection d'intrusion pour surveiller les flux de trafic entre les zones, l'utilisation de technologies de chiffrement pour sécuriser les communications entre les zones, la configuration de systèmes de prévention des intrusions pour bloquer les tentatives d'accès non autorisées, et l'établissement de politiques strictes de gestion des accès entre les zones de confiance.</p>
 @elseif($conformite->category_label == 75)
     <p>Optimiser la ségrégation des réseaux en mettant en place des processus de gestion rigoureux. Cela peut inclure l'automatisation des tâches liées à la ségrégation des réseaux, la réalisation d'audits réguliers pour vérifier la conformité aux règles de ségrégation, la mise en place de mécanismes de surveillance en temps réel pour détecter les anomalies, l'analyse régulière des journaux de sécurité, et l'amélioration continue des politiques et des procédures de ségrégation des réseaux en fonction des évaluations de risques et des incidents passés.</p>
+        @elseif($conformite->category_label == 100)
+    <p>Bonne pratique.</p>
 @endif
 @endif
 </td>
@@ -526,6 +570,8 @@ $conformite = $project->uncheckedCategories->first(function ($category) {
     <p>Renforcer le filtrage Web en utilisant des mesures de protection supplémentaires. Cela peut inclure la mise en place de mécanismes de détection de logiciels malveillants pour identifier les sites Web infectés, l'utilisation de technologies d'analyse de contenu pour détecter les menaces émergentes, la configuration de règles de filtrage basées sur des listes blanches ou des listes noires spécifiques, et l'établissement de politiques strictes de gestion des exceptions pour les sites Web nécessaires à l'activité de l'organisation.</p>
 @elseif($conformite->category_label == 75)
     <p>Optimiser le filtrage Web en mettant en place des processus de gestion rigoureux. Cela peut inclure l'automatisation des tâches liées au filtrage Web, la surveillance continue de l'efficacité des solutions de filtrage, l'analyse régulière des journaux de filtrage pour détecter les tentatives d'accès non autorisées, l'utilisation de solutions de prévention des fuites d'information pour empêcher la divulgation de données sensibles, et l'amélioration continue des politiques et des procédures de filtrage Web en fonction des évaluations de risques et des incidents passés.</p>
+        @elseif($conformite->category_label == 100)
+    <p>Bonne pratique.</p>
 @endif
 @endif
 </td>
@@ -548,6 +594,8 @@ $conformite = $project->uncheckedCategories->first(function ($category) {
     <p>Renforcer l'utilisation de la cryptographie en utilisant des mesures de protection supplémentaires. Cela peut inclure l'utilisation de technologies de chiffrement avancées pour une protection plus robuste des données, l'intégration de solutions de gestion des clés pour une gestion centralisée et sécurisée des clés, la mise en place de mécanismes de détection des attaques cryptographiques, et l'établissement de politiques strictes de gestion du cycle de vie des clés.</p>
 @elseif($conformite->category_label == 75)
     <p>Optimiser l'utilisation de la cryptographie en mettant en place des processus de gestion rigoureux. Cela peut inclure l'automatisation des tâches liées à la cryptographie, la réalisation d'audits réguliers pour vérifier la conformité aux règles d'utilisation de la cryptographie, l'utilisation de solutions de surveillance de la qualité cryptographique, la formation continue du personnel sur les nouvelles menaces et les bonnes pratiques, et l'amélioration continue des politiques et des procédures d'utilisation de la cryptographie en fonction des évaluations de risques et des incidents passés.</p>
+        @elseif($conformite->category_label == 100)
+    <p>Bonne pratique.</p>
 @endif
 @endif
 </td>
@@ -570,6 +618,8 @@ $conformite = $project->uncheckedCategories->first(function ($category) {
     <p>Renforcer le cycle de vie de développement sécurisé en utilisant des mesures de protection supplémentaires. Cela peut inclure la mise en place de tests de sécurité et de pénétration pour évaluer la résistance de l'application aux attaques, la réalisation d'analyses de sécurité dynamiques pour identifier les vulnérabilités en temps réel, l'utilisation de modèles et de frameworks de sécurité éprouvés, et l'établissement de politiques strictes de gestion des correctifs et des mises à jour de sécurité.</p>
 @elseif($conformite->category_label == 75)
     <p>Optimiser le cycle de vie de développement sécurisé en mettant en place des processus de gestion rigoureux. Cela peut inclure l'automatisation des tâches liées au cycle de vie de développement sécurisé, l'intégration de tests de sécurité dans les processus de développement continus, la formation continue du personnel sur les nouvelles techniques d'attaque et les bonnes pratiques de développement sécurisé, et l'amélioration continue des politiques et des procédures de cycle de vie de développement sécurisé en fonction des évaluations de risques et des incidents passés.</p>
+        @elseif($conformite->category_label == 100)
+    <p>Bonne pratique.</p>
 @endif
 @endif
 </td>
@@ -592,6 +642,8 @@ $conformite = $project->uncheckedCategories->first(function ($category) {
     <p>Renforcer la sécurité des applications en utilisant des mesures de protection supplémentaires. Cela peut inclure la mise en place de mécanismes de détection d'intrusion pour surveiller les activités suspectes, l'utilisation de techniques de chiffrement pour protéger les données sensibles stockées ou transmises par les applications, l'adoption de bonnes pratiques de gestion des sessions et des cookies, et l'établissement de politiques strictes de gestion des correctifs de sécurité pour les applications.</p>
 @elseif($conformite->category_label == 75)
     <p>Optimiser la sécurité des applications en mettant en place des processus de gestion rigoureux. Cela peut inclure l'automatisation des tests de sécurité des applications, la réalisation d'audits réguliers pour vérifier la conformité aux exigences de sécurité, la formation continue du personnel sur les nouvelles menaces et les bonnes pratiques de sécurité des applications, et l'amélioration continue des politiques et des procédures de sécurité des applications en fonction des évaluations de risques et des incidents passés.</p>
+        @elseif($conformite->category_label == 100)
+    <p>Bonne pratique.</p>
 @endif
 @endif
 </td>
@@ -614,6 +666,8 @@ $conformite = $project->uncheckedCategories->first(function ($category) {
     <p>Renforcer l'architecture de système sécurisé et les principes d'ingénierie de sécurité en utilisant des mesures de protection supplémentaires. Cela peut inclure l'utilisation de contrôles d'accès avancés tels que l'authentification à deux facteurs, la mise en place de systèmes de détection des intrusions pour surveiller les activités suspectes, l'utilisation de mécanismes de chiffrement pour protéger les données sensibles, et l'intégration de mécanismes de sauvegarde et de reprise après sinistre.</p>
 @elseif($conformite->category_label == 75)
     <p>Optimiser l'architecture de système sécurisé et les principes d'ingénierie de sécurité en mettant en place des processus de gestion rigoureux. Cela peut inclure l'automatisation des tâches liées à l'architecture et à l'ingénierie de sécurité, la réalisation d'audits réguliers pour vérifier la conformité aux principes et aux directives de sécurité, la formation continue du personnel sur les nouvelles techniques d'attaque et les bonnes pratiques d'ingénierie de sécurité, et l'amélioration continue des politiques et des procédures d'architecture et d'ingénierie de sécurité en fonction des évaluations de risques et des incidents passés.</p>
+        @elseif($conformite->category_label == 100)
+    <p>Bonne pratique.</p>
 @endif
 @endif
 </td>
@@ -636,6 +690,8 @@ $conformite = $project->uncheckedCategories->first(function ($category) {
     <p>Renforcer la programmation sécurisée en utilisant des mesures de protection supplémentaires. Cela peut inclure la mise en place de tests de sécurité automatisés pour valider la sécurité du code, l'utilisation de techniques de cryptographie robustes pour protéger les données confidentielles, l'adoption de mécanismes de gestion des sessions et des cookies sécurisés, et l'utilisation de mécanismes de journalisation et de surveillance pour détecter les activités suspectes.</p>
 @elseif($conformite->category_label == 75)
     <p>Optimiser la programmation sécurisée en mettant en place des processus de gestion rigoureux. Cela peut inclure l'intégration de tests de sécurité dans les processus de développement continus, la réalisation d'examens réguliers du code par des pairs pour identifier les vulnérabilités, la formation continue du personnel sur les nouvelles techniques d'attaque et les bonnes pratiques de programmation sécurisée, et l'amélioration continue des politiques et des procédures de programmation sécurisée en fonction des évaluations de risques et des incidents passés.</p>
+        @elseif($conformite->category_label == 100)
+    <p>Bonne pratique.</p>
 @endif
 @endif
 </td>
@@ -658,6 +714,8 @@ $conformite = $project->uncheckedCategories->first(function ($category) {
     <p>Renforcer les tests de sécurité en développement et acceptation en utilisant des mesures de protection supplémentaires. Cela peut inclure la réalisation de tests de sécurité automatisés réguliers pour détecter les nouvelles vulnérabilités, l'utilisation de techniques avancées de test de sécurité telles que les tests de charge et les tests de sécurité des API, et l'intégration des tests de sécurité dans les processus d'acceptation avant le déploiement du système.</p>
 @elseif($conformite->category_label == 75)
     <p>Optimiser les tests de sécurité en développement et acceptation en mettant en place des processus de gestion rigoureux. Cela peut inclure l'automatisation des tests de sécurité et l'intégration continue pour garantir une évaluation régulière de la sécurité, la réalisation d'audits réguliers pour vérifier la conformité aux exigences de sécurité, la formation continue du personnel sur les nouvelles techniques d'attaque et les bonnes pratiques de test de sécurité, et l'amélioration continue des politiques et des procédures de test de sécurité en fonction des évaluations de risques et des incidents passés.</p>
+        @elseif($conformite->category_label == 100)
+    <p>Bonne pratique.</p>
 @endif
 @endif
 </td>
@@ -680,6 +738,8 @@ $conformite = $project->uncheckedCategories->first(function ($category) {
     <p>Renforcer le développement externalisé sécurisé en utilisant des mesures de protection supplémentaires. Cela peut inclure la réalisation d'audits de sécurité chez les fournisseurs externes, la mise en place de mécanismes de contrôle de la qualité du code développé, l'utilisation de mécanismes de chiffrement pour protéger les données en transit, et l'établissement de plans de continuité des activités pour atténuer les risques liés aux fournisseurs externes.</p>
 @elseif($conformite->category_label == 75)
     <p>Optimiser le développement externalisé sécurisé en mettant en place des processus de gestion rigoureux. Cela peut inclure l'inclusion de clauses de sécurité dans les contrats de développement externalisé, la réalisation d'examens réguliers de la conformité aux exigences de sécurité, la formation continue du personnel sur les risques liés à l'externalisation et les bonnes pratiques de développement sécurisé, et l'amélioration continue des politiques et des procédures de développement externalisé en fonction des évaluations de risques et des incidents passés.</p>
+        @elseif($conformite->category_label == 100)
+    <p>Bonne pratique.</p>
 @endif
 @endif
 </td>
@@ -702,6 +762,8 @@ $conformite = $project->uncheckedCategories->first(function ($category) {
     <p>Renforcer la séparation des environnements en utilisant des mesures de protection supplémentaires. Celapeut inclure l'utilisation de technologies de virtualisation ou de conteneurisation pour isoler les environnements, l'application de contrôles de sécurité spécifiques à chaque environnement (par exemple, pare-feu, détection d'intrusion), et la mise en place de processus de surveillance pour détecter toute activité anormale ou non autorisée.</p>
 @elseif($conformite->category_label == 75)
     <p>Optimiser la séparation des environnements en mettant en place des processus de gestion rigoureux. Cela peut inclure l'automatisation des déploiements entre les environnements pour réduire les erreurs humaines, l'utilisation de techniques avancées de virtualisation ou de conteneurisation pour améliorer l'efficacité et la flexibilité, la réalisation d'audits réguliers pour vérifier la conformité aux politiques de séparation des environnements, et l'amélioration continue des processus en fonction des évaluations de risques et des incidents passés.</p>
+        @elseif($conformite->category_label == 100)
+    <p>Bonne pratique.</p>
 @endif
 @endif
 </td>
@@ -724,6 +786,8 @@ $conformite = $project->uncheckedCategories->first(function ($category) {
     <p>Renforcer la gestion du changement en utilisant des mesures de protection supplémentaires. Cela peut inclure la mise en place de mécanismes de contrôle des versions pour assurer l'intégrité du code et des configurations, l'établissement de processus de rétrogradation pour revenir à des versions précédentes en cas de problème, et la réalisation de tests de validation rigoureux avant la mise en production des changements.</p>
 @elseif($conformite->category_label == 75)
     <p>Optimiser la gestion du changement en mettant en place des processus de gestion rigoureux. Cela peut inclure l'automatisation des processus de gestion du changement pour améliorer l'efficacité et la traçabilité, la réalisation d'audits réguliers pour vérifier la conformité aux politiques de gestion du changement, l'intégration de la gestion du changement avec d'autres processus tels que la gestion des incidents et la gestion des problèmes, et l'amélioration continue des processus en fonction des évaluations de risques et des incidents passés.</p>
+        @elseif($conformite->category_label == 100)
+    <p>Bonne pratique.</p>
 @endif
 @endif
 </td>
@@ -746,6 +810,8 @@ $conformite = $project->uncheckedCategories->first(function ($category) {
     <p>Renforcer les informations sur les tests en utilisant des mesures de protection supplémentaires. Cela peut inclure la réalisation de tests de sécurité pour identifier les vulnérabilités potentielles, l'utilisation de techniques de test avancées telles que les tests de pénétration, et la mise en place de processus de revue et d'approbation indépendants pour garantir la qualité des tests.</p>
 @elseif($conformite->category_label == 75)
     <p>Optimiser les informations sur les tests en mettant en place des processus de gestion rigoureux. Cela peut inclure l'automatisation des tests pour améliorer l'efficacité et la reproductibilité, l'intégration des tests dans les processus de développement et de déploiement continus, la réalisation d'audits réguliers pour vérifier la conformité aux politiques de gestion des tests, et l'amélioration continue des processus en fonction des évaluations de risques et des incidents passés.</p>
+        @elseif($conformite->category_label == 100)
+    <p>Bonne pratique.</p>
 @endif
 @endif
 </td>
@@ -768,6 +834,8 @@ $conformite = $project->uncheckedCategories->first(function ($category) {
     <p>Renforcer la protection des systèmes d'information lors des tests d'audit en utilisant des mesures de protection supplémentaires. Cela peut inclure l'utilisation de systèmes virtuels ou de copies de sauvegarde pour effectuer les tests, la mise en place de processus de contrôle des changements pour gérer les modifications apportées aux systèmes avant et après les tests, et l'application de contrôles de sécurité spécifiques pour limiter les risques pour les systèmes sous test.</p>
 @elseif($conformite->category_label == 75)
     <p>Optimiser la protection des systèmes d'information lors des tests d'audit en mettant en place des processus de gestion rigoureux. Cela peut inclure l'automatisation des tests d'audit pour améliorer l'efficacité et la reproductibilité, la réalisation d'audits réguliers pour vérifier la conformité aux politiques de protection des systèmes d'information lors des tests d'audit, et l'amélioration continue des processus en fonction des évaluations de risques et des incidents passés.</p>
+        @elseif($conformite->category_label == 100)
+    <p>Bonne pratique.</p>
 @endif
 @endif
 

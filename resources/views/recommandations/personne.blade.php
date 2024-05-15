@@ -43,7 +43,10 @@ $conformite = $project->uncheckedCategories->first(function ($category) {
         <p>Renforcez votre processus de sélection des candidats en utilisant des méthodes d'évaluation plus standardisées et objectives. Impliquez plusieurs parties prenantes dans le processus de prise de décision pour garantir une sélection équitable.</p>
     @elseif($conformite->category_label == 75)
         <p>Évaluez régulièrement l'efficacité de votre processus de sélection des candidats en recueillant des commentaires des parties prenantes et en analysant les résultats des nouvelles recrues. Apportez des ajustements pour améliorer la qualité des candidats sélectionnés.</p>
+    @elseif($conformite->category_label == 100)
+    <p>Bonne pratique.</p>
     @endif
+    
 @endif
  </td>
     </tr>
@@ -65,6 +68,8 @@ $conformite = $project->uncheckedCategories->first(function ($category) {
     <p>Mettez en place un processus formel pour communiquer les termes et conditions d'embauche à tous les nouveaux employés. Répondez à leurs questions et demandes d'éclaircissements.</p>
 @elseif($conformite->category_label == 75)
     <p>Vérifiez régulièrement la conformité des termes et conditions d'embauche pour tous les employés. Mettez à jour les termes et conditions en fonction des changements législatifs et informez les employés.</p>
+@elseif($conformite->category_label == 100)
+    <p>Bonne pratique.</p>
 @endif
 @endif
  </td>
@@ -87,6 +92,8 @@ $conformite = $project->uncheckedCategories->first(function ($category) {
     <p>Renforcez le programme de sensibilisation et de formation en mettant l'accent sur l'importance de la conformité à la norme ISO 27001.</p>
 @elseif($conformite->category_label == 75)
     <p>Évaluez régulièrement l'efficacité du programme de sensibilisation et de formation et adaptez-le en fonction des besoins identifiés.</p>
+@elseif($conformite->category_label == 100)
+    <p>Bonne pratique.</p>
 @endif
 @endif
  </td>
@@ -109,6 +116,8 @@ $conformite = $project->uncheckedCategories->first(function ($category) {
     <p>Mettre en place un processus disciplinaire formel et bien communiqué pour assurer une gestion cohérente des problèmes de comportement.</p>
 @elseif($conformite->category_label == 75)
     <p>Évaluer régulièrement l'efficacité du processus disciplinaire et apporter les ajustements nécessaires pour garantir une gestion juste et équitable des problèmes de comportement.</p>
+@elseif($conformite->category_label == 100)
+    <p>Bonne pratique.</p>
 @endif
 @endif
  </td>
@@ -131,6 +140,8 @@ $conformite = $project->uncheckedCategories->first(function ($category) {
     <p>Mettez en place des procédures détaillées pour définir les responsabilités après la cessation ou le changement d'emploi. Assurez-vous que le personnel est formé à ces procédures et effectuez des vérifications régulières pour assurer leur respect.</p>
 @elseif($conformite->category_label == 75)
     <p>Effectuez des audits périodiques pour évaluer l'efficacité des procédures de responsabilités après la cessation ou le changement d'emploi. Mettez à jour les procédures en fonction des résultats des audits et assurez-vous que le personnel est informé des changements.</p>
+@elseif($conformite->category_label == 100)
+    <p>Bonne pratique.</p>
 @endif
 @endif
  </td>
@@ -153,6 +164,8 @@ $conformite = $project->uncheckedCategories->first(function ($category) {
     <p>Mettez en œuvre des processus de suivi pour vous assurer que tous les employés et partenaires ont signé les accords de confidentialité ou de non-divulgation. Révisez régulièrement ces accords pour vous assurer qu'ils répondent aux besoins actuels de votre organisation.</p>
 @elseif($conformite->category_label == 75)
     <p>Effectuez des audits réguliers pour vérifier la conformité aux accords de confidentialité ou de non-divulgation. Mettez en place des mécanismes de formation continue pour sensibiliser le personnel à l'importance de la protection des informations confidentielles.</p>
+@elseif($conformite->category_label == 100)
+    <p>Bonne pratique.</p>
 @endif
 @endif
  </td>
@@ -175,6 +188,8 @@ $conformite = $project->uncheckedCategories->first(function ($category) {
     <p>Établissez des directives claires sur les pratiques de sécurité du télétravail, telles que la protection des identifiants de connexion, la sécurisation des communications et l'utilisation de réseaux Wi-Fi sécurisés. Mettez en place des mécanismes de surveillance pour détecter les éventuelles violations de sécurité.</p>
 @elseif($conformite->category_label == 75)
     <p>Effectuez des évaluations régulières de la sécurité du télétravail pour identifier les vulnérabilités et les lacunes. Mettez en place des mesures de contrôle supplémentaires, telles que des audits de sécurité externes, pour renforcer la conformité et la protection des informations sensibles.</p>
+@elseif($conformite->category_label == 100)
+    <p>Bonne pratique.</p>
 @endif
 @endif
  </td>
@@ -197,6 +212,8 @@ $conformite = $project->uncheckedCategories->first(function ($category) {
     <p>Mettez en place un processus de rapport des événements de sécurité de l'information, en spécifiant les informations essentielles à inclure dans les rapports. Assurez-vous que les rapports sont clairs, précis et documentent toutes les informations nécessaires.</p>
 @elseif($conformite->category_label == 75)
     <p>Effectuez régulièrement des analyses et des évaluations des rapports sur les événements de sécurité de l'information pour identifier les tendances et les problèmes récurrents. Utilisez ces informations pour améliorer continuellement le processus de rapport et prendre des mesures correctives appropriées.</p>
+@elseif($conformite->category_label == 100)
+    <p>Bonne pratique.</p>
 @endif
 @endif
 </td>
