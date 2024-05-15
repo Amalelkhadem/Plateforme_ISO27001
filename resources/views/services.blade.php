@@ -9,8 +9,11 @@
         <div style="flex: 1; margin-right: 10px; margin-left: 0px; margin-top: 0px;">
             <div class="checkbox-list" style="background: linear-gradient(135deg, #ADD8E6 25%, #E0F0FF 75%); box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); border-radius: 8px; padding: 20px; margin: 0 auto; max-width: 750px;">
                 <p style="color: #1877F2; font-size: 20px;">AuditISO27001</p>
-                <p style="font-weight: bold; color: black; font-size: 30px;">Une plateforme en ligne complète pour une évaluation efficace de la conformité à la norme ISO 27001</p>
-                <p style="color: #333333; font-size: 14px; margin-top: 64px; font-weight: bold;">Accédez à notre plateforme, pour être conforme et garantir la sécurité</p>
+                <p style="font-weight: bold; color: black; font-size: 30px;">Évaluation des mesures de la norme ISO 27001
+Résultat de conformité
+Recommandations spécifiques à chaque mesure
+Statistiques et contrôle
+Gestion des projets des auditeurs dans l'interface d'administration</p>
                 @if (Route::has('register'))
                 <a href="{{ route('register') }}" class="font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500" style="display: inline-block; padding: 10px 30px; background-color: black; color: white; border: 2px solid darkgreen;margin-top: 0px; border-radius: 20px;">Essaiez maintenant</a>
                 @endif
