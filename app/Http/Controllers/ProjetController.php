@@ -111,6 +111,9 @@ public function userSessions()
     {
         return view('guide');
     }
-    
+    public function services()
+    {
+        return view('services');
+    }
 
 }
